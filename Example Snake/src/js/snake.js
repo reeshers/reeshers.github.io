@@ -828,7 +828,7 @@ SNAKE.Board =
         elmAboutPanel = document.createElement("div");
         elmAboutPanel.className = "snake-panel-component";
         elmAboutPanel.innerHTML =
-          "<a href='http://patorjk.com/blog/software/' class='snake-link'>more patorjk.com apps</a> - <a href='https://github.com/patorjk/JavaScript-Snake' class='snake-link'>source code</a> - <a href='https://www.youtube.com/channel/UCpcCLm9y6CsjHUrCvJHYHUA' class='snake-link'>pat's youtube</a>";
+          "<a href='https://github.com/patorjk/JavaScript-Snake' class='snake-link'>source code</a> - <a href='https://www.linkedin.com/in/rdutta1013/' class='snake-link'>rishi's linkedin</a>";
 
         elmLengthPanel = document.createElement("div");
         elmLengthPanel.className = "snake-panel-component";
