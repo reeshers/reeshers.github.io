@@ -1,6 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { title, subtitle } from "../settings/settings.json"
+import Typewriter from "astro-typewriter";
 
 ---
 
@@ -8,17 +9,29 @@ import { title, subtitle } from "../settings/settings.json"
 	<div class="header-section">
 		<div class="header-frame">
 			<h1>{title}</h1>
-			<h2>{subtitle}</h2>
+			<h2><Typewriter messages={subtitle} /></h2>
+		</div>
+		<div class="image-frame">
+			<img id="profile-pic" src="src/images/profile.jpg" alt="Profile Picture"/>
 		</div>
 	</div>
 </header>
 <nav>
 	<HeaderLink href="/">home</HeaderLink>
-	<HeaderLink href="/posts">posts</HeaderLink>
-	<HeaderLink href="https://cassidoo.co/newsletter">etc</HeaderLink>
+	<HeaderLink href="/posts">blog</HeaderLink>
+	<HeaderLink href="https://vimeo.com/user96897905">vimeo</HeaderLink>
+	<HeaderLink href="https://www.linkedin.com/in/rdutta1013/">linkedin</HeaderLink>
 </nav>
 <style>
 	h2 {
 		margin: 0.5em 0;
+	}
+	.header-frame {
+		width: 300px;
+	}
+	.image-frame {
+		width: 150px;
+		height: 200px;
+		clip-path: circle(40%);
 	}
 </style>
